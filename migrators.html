@@ -58,7 +58,7 @@ add the following to your <code class="docutils literal notranslate"><span class
    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">v1.10.x</span>
 </pre></div>
 </div>
-<p>Note that <code class="docutils literal notranslate"><span class="pre">master</span></code> will always be included.</p>
+<p>Note that <code class="docutils literal notranslate"><span class="pre">master</span></code> or <code class="docutils literal notranslate"><span class="pre">main</span></code> will always be included.</p>
 </section>
 <section id="building-a-migration-yaml-using-cfep9">
 <h1>Building a Migration YAML Using CFEP9<a class="headerlink" href="#building-a-migration-yaml-using-cfep9" title="Permalink to this headline">¶</a></h1>
@@ -66,7 +66,7 @@ add the following to your <code class="docutils literal notranslate"><span class
 Once merged the migration will start.
 You can copy the <code class="docutils literal notranslate"><span class="pre">recipe/migrations/example.exyaml</span></code> example and modify it similar to the staged-recipes example recipe.
 Note that the <code class="docutils literal notranslate"><span class="pre">migration_ts</span></code> is the timestamp of the migration and can be created by copying the result of <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">time;</span> <span class="pre">print(time.time())</span></code> from a python interpreter.</p>
-<p>Please see the <a class="reference external" href="https://github.com/conda-forge/conda-forge-enhancement-proposals/blob/master/cfep-09.md#implementation-details">CFEP9 implementation</a> information for the
+<p>Please see the <a class="reference external" href="https://github.com/conda-forge/conda-forge-enhancement-proposals/blob/main/cfep-09.md#implementation-details">CFEP9 implementation</a> information for the
 different kinds of migrations that are available.</p>
 </section>
 <section id="custom-migrations">
@@ -131,7 +131,6 @@ to the migrators list.</p>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="usage.html">Usage Docs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="github_actions_infrastructure.html">GitHub Actions Infrastructure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="version_migrator.html">Notes on the <code class="docutils literal notranslate"><span class="pre">Version</span></code> Migrator</a></li>
 </ul>
 
@@ -170,7 +169,7 @@ to the migrators list.</p>
       &copy;2019, Conda-forge-tick Development Team.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.1.2</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.2.0</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
