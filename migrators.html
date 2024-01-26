@@ -88,16 +88,16 @@ a good looking pull request with a correct change to the feedstock.</p>
 <h2>Add your <code class="docutils literal notranslate"><span class="pre">Migration</span></code> to <code class="docutils literal notranslate"><span class="pre">auto_tick.py</span></code><a class="headerlink" href="#add-your-migration-to-auto-tick-py" title="Link to this heading">¶</a></h2>
 <p>To have the bot run the migration, we need to add the migrator to add it to the
 <code class="docutils literal notranslate"><span class="pre">auto_tick</span></code> module.
-If the migrator needs no information about the graph (eg. version bumps) then
+If the migrator needs no information about the graph (e.g., version bumps), then
 it can be added to the <code class="docutils literal notranslate"><span class="pre">MIGRATORS</span></code> list directly.
-If the migrator needs graph information (eg it runs in topological order) then it
+If the migrator needs graph information (e.g., it runs in topological order), then it
 needs to be added by a function (e.g., <code class="docutils literal notranslate"><span class="pre">add_rebuild</span></code>).
 This function takes in the list of migrators and the entire package graph.
-The job of the function is to pair down the graph to the nodes which need
+The job of the function is to pare down the graph to the nodes which need
 to be migrated, for instance only packages which require <code class="docutils literal notranslate"><span class="pre">python</span></code>.
-This paired down graph is passed into the migrator, which is then added
+This pared-down graph is passed into the migrator, which is then added
 to the migrators list.</p>
-<p>Once the <code class="docutils literal notranslate"><span class="pre">add_rebuild...</span></code> function is created it needs to be added to the
+<p>Once the <code class="docutils literal notranslate"><span class="pre">add_rebuild...</span></code> function is created, it needs to be added to the
 <code class="docutils literal notranslate"><span class="pre">initialize_migrators</span></code> function so the migration will go forward.</p>
 <p>See the <code class="docutils literal notranslate"><span class="pre">auto_tick.py</span></code> file for example <code class="docutils literal notranslate"><span class="pre">add_rebuild...</span></code> functions.</p>
 </section>
